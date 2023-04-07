@@ -23,6 +23,8 @@ private:
     void update();
     void render();
 
+    bool rectIntersect(const SDL_Rect& a, const SDL_Rect& b);
+
     SDL_Window* window;
     SDL_Renderer* renderer;
     bool running;

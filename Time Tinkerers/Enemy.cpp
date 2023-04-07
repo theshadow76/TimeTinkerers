@@ -33,3 +33,11 @@ void Enemy::cleanup() {
         SDL_DestroyTexture(texture);
     }
 }
+
+int Enemy::getX() const {
+    return x;
+}
+
+int Enemy::getY() const {
+    return y;
+}

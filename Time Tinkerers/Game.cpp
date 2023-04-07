@@ -83,6 +83,31 @@ void Game::update() {
     for (Enemy& enemy : enemies) {
         enemy.update();
     }
+
+    for (auto enemyIt = enemies.begin(); enemyIt != enemies.end();) {
+        bool enemyHit = false;
+        enemyIt->update();
+
+        for (auto laserIt = player.lasers.begin(); laserIt != player.lasers.end();) {
+            SDL_Rect laserRect = { laserIt->x, laserIt->y, 10, 2 };
+            SDL_Rect enemyRect = { enemyIt->getX(), enemyIt->getY(), 50, 50 };
+
+            if (rectIntersect(laserRect, enemyRect)) {
+                enemyHit = true;
+                laserIt = player.lasers.erase(laserIt);
+            }
+            else {
+                ++laserIt;
+            }
+        }
+
+        if (enemyHit) {
+            enemyIt = enemies.erase(enemyIt);
+        }
+        else {
+            ++enemyIt;
+        }
+    }
 }
 
 void Game::render() {
@@ -98,4 +123,11 @@ void Game::render() {
     }
 
     SDL_RenderPresent(renderer);
+}
+
+bool Game::rectIntersect(const SDL_Rect& a, const SDL_Rect& b) {
+    return a.x < b.x + b.w &&
+        a.x + a.w > b.x &&
+        a.y < b.y + b.h &&
+        a.y + a.h > b.y;
 }
