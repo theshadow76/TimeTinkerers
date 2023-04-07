@@ -5,9 +5,9 @@
 #include "Enemy.h"
 #include "Game.h"
 
-Player::Player() : x(100), y(100), texture(nullptr) {}
-
 Player::~Player() {}
+
+Player::Player() : x(100), y(100), texture(nullptr), health(100) {}
 
 void Player::init(SDL_Renderer* renderer) {
     SDL_Surface* surface = IMG_Load("player.png");
@@ -142,4 +142,23 @@ void Player::cleanup() {
     if (weaponTexture) {
         SDL_DestroyTexture(weaponTexture);
     }
+}
+
+void Player::decreaseHealth(int amount) {
+    health -= amount;
+    if (health < 0) {
+        health = 0;
+    }
+}
+
+int Player::getHealth() const {
+    return health;
+}
+
+int Player::getX() const {
+    return x;
+}
+
+int Player::getY() const {
+    return y;
 }

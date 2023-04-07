@@ -20,6 +20,10 @@ public:
 
     double weaponAngle;
 
+    void decreaseHealth(int amount);
+
+    int getHealth() const;
+
     SDL_Texture* weaponTexture;
     struct Laser {
         int x, y;
@@ -27,7 +31,12 @@ public:
     };
     std::vector<Laser> lasers;
 
+    int getX() const;
+    int getY() const;
+
 private:
     int x, y;
+    int health;
     SDL_Texture* texture;
+
 };

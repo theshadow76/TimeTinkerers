@@ -18,10 +18,16 @@ public:
     void cleanup();
     void spawnEnemies(SDL_Renderer* renderer);
 
+    void drawMap();
+    void drawTile(SDL_Rect rect, SDL_Color color);
+
 private:
     void handleEvents();
     void update();
     void render();
+
+    void checkCollisions();
+    void drawRect(SDL_Rect rect, SDL_Color color);
 
     bool rectIntersect(const SDL_Rect& a, const SDL_Rect& b);
 
