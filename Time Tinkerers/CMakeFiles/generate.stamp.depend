@@ -1,0 +1,27 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeFiles/3.26.3/CMakeCCompiler.cmake
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeFiles/3.26.3/CMakeRCCompiler.cmake
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeFiles/3.26.3/CMakeSystem.cmake
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeLists.txt
+C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/cmake/SDL2/sdl2-config-version.cmake
+C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/cmake/SDL2/sdl2-config.cmake

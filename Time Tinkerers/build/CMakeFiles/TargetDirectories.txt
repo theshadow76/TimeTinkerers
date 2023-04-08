@@ -1,0 +1,3 @@
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/TIME_TINKERERS.dir
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/edit_cache.dir
+C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/rebuild_cache.dir

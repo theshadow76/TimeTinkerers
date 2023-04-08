@@ -7,7 +7,7 @@ GreenCircle::GreenCircle(int x, int y, int r) : x(x), y(y), r(r), texture(nullpt
 GreenCircle::~GreenCircle() {}
 
 void GreenCircle::init(SDL_Renderer* renderer) {
-    SDL_Surface* surface = IMG_Load("green_circle.png");
+    SDL_Surface* surface = IMG_Load("PowerUpp.png");
     if (surface) {
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_FreeSurface(surface);

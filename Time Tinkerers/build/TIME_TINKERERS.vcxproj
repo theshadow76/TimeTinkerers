@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83C0BBA8-929F-3510-8D97-03E3983E38E9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>TIME_TINKERERS</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">TIME_TINKERERS.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">TIME_TINKERERS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">TIME_TINKERERS.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">TIME_TINKERERS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">TIME_TINKERERS.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">TIME_TINKERERS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">TIME_TINKERERS.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">TIME_TINKERERS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2.dll.a;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2main.a;SDL2_IMAGE_LIBRARIES-NOTFOUND.lib;-mwindows;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/src/SDL2-2.26.4/i686-w64-mingw32/lib;C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 -Wl,--undefined=_WinMain@16</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/Debug/TIME_TINKERERS.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/Debug/TIME_TINKERERS.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2.dll.a;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2main.a;SDL2_IMAGE_LIBRARIES-NOTFOUND.lib;-mwindows;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/src/SDL2-2.26.4/i686-w64-mingw32/lib;C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 -Wl,--undefined=_WinMain@16</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/Release/TIME_TINKERERS.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/Release/TIME_TINKERERS.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2.dll.a;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2main.a;SDL2_IMAGE_LIBRARIES-NOTFOUND.lib;-mwindows;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/src/SDL2-2.26.4/i686-w64-mingw32/lib;C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 -Wl,--undefined=_WinMain@16</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/MinSizeRel/TIME_TINKERERS.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/MinSizeRel/TIME_TINKERERS.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\SDL2-2.26.4\i686-w64-mingw32\include;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\SDL2_IMAGE_INCLUDE_DIRS-NOTFOUND;C:\src\SDL2-2.26.4\i686-w64-mingw32\include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2.dll.a;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\libSDL2main.a;SDL2_IMAGE_LIBRARIES-NOTFOUND.lib;-mwindows;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/src/SDL2-2.26.4/i686-w64-mingw32/lib;C:/src/SDL2-2.26.4/i686-w64-mingw32/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 -Wl,--undefined=_WinMain@16</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/RelWithDebInfo/TIME_TINKERERS.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/RelWithDebInfo/TIME_TINKERERS.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers" "-BC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build" --check-stamp-file "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config-version.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers" "-BC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build" --check-stamp-file "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config-version.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers" "-BC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build" --check-stamp-file "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config-version.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers" "-BC:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build" --check-stamp-file "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config-version.cmake;C:\src\SDL2-2.26.4\i686-w64-mingw32\lib\cmake\SDL2\sdl2-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\Time_Tinkerers.cpp" />
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\Enemy.cpp" />
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\Game.cpp" />
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\GreenCircle.cpp" />
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\Level.cpp" />
+    <ClCompile Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\Player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\vigop\OneDrive\backup 1\coding\Shadow Tech Software 2\visual studio 2019\Time Tinkerers\Time Tinkerers\build\ZERO_CHECK.vcxproj">
+      <Project>{C4EF753E-A92E-3155-8230-A417DF0FF68C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\Time_Tinkerers.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\Time_Tinkerers.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/Time_Tinkerers.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/Time_Tinkerers.cpp.obj"
+},
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\Enemy.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\Enemy.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/Enemy.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/Enemy.cpp.obj"
+},
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\Game.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\Game.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/Game.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/Game.cpp.obj"
+},
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\GreenCircle.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\GreenCircle.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/GreenCircle.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/GreenCircle.cpp.obj"
+},
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\Level.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\Level.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/Level.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/Level.cpp.obj"
+},
+{
+  "directory": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/build",
+  "command": "C:\\src\\mingw64\\bin\\g++.exe  @CMakeFiles/TIME_TINKERERS.dir/includes_CXX.rsp -g -o CMakeFiles\\TIME_TINKERERS.dir\\Player.cpp.obj -c \"C:\\Users\\vigop\\OneDrive\\backup 1\\coding\\Shadow Tech Software 2\\visual studio 2019\\Time Tinkerers\\Time Tinkerers\\Player.cpp\"",
+  "file": "C:/Users/vigop/OneDrive/backup 1/coding/Shadow Tech Software 2/visual studio 2019/Time Tinkerers/Time Tinkerers/Player.cpp",
+  "output": "CMakeFiles/TIME_TINKERERS.dir/Player.cpp.obj"
+}
+]

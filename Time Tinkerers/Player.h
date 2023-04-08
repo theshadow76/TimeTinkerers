@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SDL.h>
+#include "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2/SDL.h"
 #include <vector>
 
 class Player {

@@ -2,10 +2,13 @@
 #include "Enemy.h"
 #include <SDL.h>
 #include <vector>
-#include <SDL_image.h>
+#include "C:\\src\\SDL2_image\\i686-w64-mingw32\\include\\SDL2\\SDL_image.h"
 #include <cstdlib>
 #include <ctime>
 #include "Player.h"
+#include <iostream>
+
+using namespace std;
 
 std::vector<Enemy> enemies;
 
@@ -23,7 +26,7 @@ GreenCircle::~GreenCircle() {}
 
 
 bool Game::init() {
-    srand(static_cast<unsigned>(time(0))); // Inicializa la función rand()
+    srand(static_cast<unsigned>(time(0))); // Inicializa la funciï¿½n rand()
 
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         return false;
@@ -49,7 +52,7 @@ void Game::run() {
     while (running) {
         handleEvents();
         update();
-        checkCollisions(); // Agrega esta línea
+        checkCollisions(); // Agrega esta lï¿½nea
         render();
         SDL_Delay(16);
     }
@@ -67,7 +70,7 @@ void GreenCircle::init(SDL_Renderer* renderer) {
         SDL_FreeSurface(surface);
     }
     else {
-        printf("Error al cargar la imagen del círculo verde: %s\n", IMG_GetError());
+        printf("Error al cargar la imagen del cï¿½rculo verde: %s\n", IMG_GetError());
     }
 }
 
@@ -122,7 +125,7 @@ void Circle::init(SDL_Renderer* renderer) {
         SDL_FreeSurface(surface);
     }
     else {
-        printf("Error al cargar la imagen del círculo: %s\n", IMG_GetError());
+        printf("Error al cargar la imagen del cï¿½rculo: %s\n", IMG_GetError());
     }
 }
 
@@ -139,14 +142,14 @@ bool Circle::isColliding(SDL_Rect playerRect) {
 }
 
 void Game::spawnCircles(SDL_Renderer* renderer) {
-    int numCircles = rand() % 3 + 3; // Crea entre 3 y 5 círculos
+    int numCircles = rand() % 3 + 3; // Crea entre 3 y 5
 
     for (int i = 0; i < numCircles; ++i) {
-        // Crea una posición aleatoria para el círculo
+        // Crea una posicin aleatoria para el
         int x = rand() % 800;
         int y = rand() % 600;
 
-        // Crea el círculo y lo agrega al vector de círculos
+        // Crea el crculo y lo agrega al vector de cculos
         Circle circle(x, y);
         circle.init(renderer);
         circles.push_back(circle);
@@ -170,9 +173,14 @@ bool Powerup::isColliding(const SDL_Rect& rect) const {
     return Game::rectIntersect(powerupRect, rect);
 }
 
+bool Powerup::rectIntersect(const SDL_Rect& a, const SDL_Rect& b)
+{
+    return false;
+}
+
 
 void Powerup::update() {
-    // Aquí puedes agregar la lógica de actualización del power-up
+    // Aquï¿½ puedes agregar la lï¿½gica de actualizaciï¿½n del power-up
 }
 
 void Powerup::render(SDL_Renderer* renderer) {
@@ -216,7 +224,7 @@ void Game::handleEvents() {
         player.handleEvents(event);
         if (event.type == SDL_KEYDOWN) {
             switch (event.key.keysym.sym) {
-            case SDLK_SPACE: // Cambia SDLK_SPACE al botón que prefieras para agregar enemigos
+            case SDLK_SPACE: // Cambia SDLK_SPACE al botï¿½n que prefieras para agregar enemigos
                 spawnEnemies(renderer);
                 break;
             }
@@ -303,7 +311,7 @@ void Game::render() {
     // Renderiza el jugador
     player.render(renderer);
 
-    // Renderiza los láseres
+    // Renderiza los lï¿½seres
 
     // Renderiza la barra de salud del jugador
     SDL_Rect healthBarOutline = { 20, 20, 104, 24 };
@@ -319,8 +327,8 @@ void Game::render() {
 
 void Game::drawMap() {
     // Colores
-    SDL_Color darkBlue = { 20, 50, 100, 255 }; // Un azul oscuro más apagado
-    SDL_Color lightBlue = { 40, 80, 130, 255 }; // Un azul medio más apagado
+    SDL_Color darkBlue = { 20, 50, 100, 255 }; // Un azul oscuro mï¿½s apagado
+    SDL_Color lightBlue = { 40, 80, 130, 255 }; // Un azul medio mï¿½s apagado
 
 
     // Dibuja un cuadrado azul oscuro que cubre toda la pantalla

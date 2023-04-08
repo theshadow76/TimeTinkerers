@@ -1,12 +1,15 @@
 #pragma once
 
 #include "Player.h"
-#include "Enemy.h" // Asegúrate de incluir este archivo
-#include <SDL.h>
+#include "Enemy.h" // Asegate de incluir este archivo
+#include "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2/SDL.h"
 #include <vector>
-#include <SDL_image.h>
+#include "C:\\src\\SDL2_image\\i686-w64-mingw32\\include\\SDL2\\SDL_image.h"
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
+
+using namespace std;
 
 class Game {
 public:
@@ -38,10 +41,9 @@ private:
     bool running;
 
     Player player;
-
-    std::vector<Enemy> enemies;
-    std::vector<Powerup> powerups;
-    std::vector<Circle> circles;
+    vector<Enemy> enemies;
+    vector<Powerup> powerups;
+    vector<Circle> circles;
 };
 
 class Powerup {

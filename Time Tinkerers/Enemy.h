@@ -1,9 +1,34 @@
 #pragma once
 #include <iostream>
-#include <SDL.h>
+#include "C:/src/SDL2-2.26.4/i686-w64-mingw32/include/SDL2/SDL.h"
 #include <vector>
 #include "Game.h"
 
+class Particle {
+public:
+    Particle(); // Constructor predeterminado
+    Particle(int x, int y, int vx, int vy, int life, SDL_Color color);
+    void update();
+    void render(SDL_Renderer* renderer);
+
+    bool isDead() const; // Declaracin de la funcin
+
+private:
+    int x, y;
+    int vx, vy;
+    int life;
+    SDL_Color color;
+};
+// ImplementaciÃ³n del constructor predeterminado
+Particle::Particle() {
+    // Inicializa las variables miembro con valores predeterminados, por ejemplo:
+    x = 0;
+    y = 0;
+    vx = 0;
+    vy = 0;
+    life = 0;
+    color = {0, 0, 0, 255}; // Color negro con opacidad total
+}
 class Enemy {
 public:
     Enemy(int x, int y);
@@ -31,21 +56,6 @@ private:
     std::vector<Particle> particles;
 };
 
-class Particle {
-public:
-    Particle(int x, int y, int vx, int vy, int life, SDL_Color color);
-    void update();
-    void render(SDL_Renderer* renderer);
-
-    bool isDead() const; // Declaración de la función
-
-private:
-    int x, y;
-    int vx, vy;
-    int life;
-    SDL_Color color;
-};
-
-bool Particle::isDead() const { // Definición de la función
+bool Particle::isDead() const { // Definiciï¿½n de la funciï¿½n
     return life <= 0;
 }

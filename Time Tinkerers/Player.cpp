@@ -1,5 +1,5 @@
 #include "Player.h"
-#include <SDL_image.h>
+#include "C:\\src\\SDL2_image\\i686-w64-mingw32\\include\\SDL2\\SDL_image.h"
 #include <iostream>
 #include <cmath>
 #include "Enemy.h"
@@ -74,7 +74,7 @@ void Player::updateWeaponAngle(int mouseX, int mouseY) {
 
 void Player::shoot(int mouseX, int mouseY) {
     Laser laser;
-    laser.x = x + 25; // Centra el láser en el personaje
+    laser.x = x + 25; // Centra el ln el personaje
     laser.y = y + 25;
 
     double dx = mouseX - laser.x;
@@ -85,7 +85,7 @@ void Player::shoot(int mouseX, int mouseY) {
 }
 
 void Player::update() {
-    // Puedes agregar aquí la lógica de actualización del personaje, como la detección de colisiones o las mecánicas de manipulación del tiempo.
+    // Puedes agregarla gica de actualiza personaje, como la detee colisiones o las mecas de manipudel tiempo.
     for (Laser& laser : lasers) {
         int laserSpeed = 10;
         laser.x += laserSpeed * cos(laser.angle);
@@ -98,7 +98,7 @@ void Player::render(SDL_Renderer* renderer) {
         SDL_Rect rect = { x, y, 50, 50 };
         SDL_RenderCopy(renderer, texture, nullptr, &rect);
     }
-    // Renderiza los láseres
+    // Renderiza los 
     for (Laser& laser : lasers) {
         SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 
@@ -114,7 +114,7 @@ void Player::render(SDL_Renderer* renderer) {
             SDL_Rect srcRect = { 0, 0, 10, 2 };
             SDL_Rect dstRect = { laser.x, laser.y, 10, 2 };
             double angleInDegrees = laser.angle * 180 / M_PI;
-            SDL_Point pivot = { 5, 1 }; // Centro del láser (la mitad de su ancho y alto)
+            SDL_Point pivot = { 5, 1 }; // Centro del lï¿½ser (la mitad de su ancho y alto)
 
             SDL_RenderCopyEx(renderer, laserTexture, &srcRect, &dstRect, angleInDegrees, &pivot, SDL_FLIP_NONE);
             SDL_DestroyTexture(laserTexture);
@@ -156,7 +156,7 @@ void Player::setHealth(int health) {
 }
 
 SDL_Rect Player::getRect() const {
-    SDL_Rect rect = { x, y, width, height }; // Asegúrate de que 'width' y 'height' sean las dimensiones correctas del jugador.
+    SDL_Rect rect = { x, y, width, height }; // Asegï¿½rate de que 'width' y 'height' sean las dimensiones correctas del jugador.
     return rect;
 }
 
