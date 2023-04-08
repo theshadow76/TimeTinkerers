@@ -13,6 +13,14 @@ Game::Game() : window(nullptr), renderer(nullptr), running(false) {}
 
 Game::~Game() {}
 
+Powerup::Powerup(int x, int y) : x(x), y(y), texture(nullptr) {}
+
+Powerup::~Powerup() {}
+
+GreenCircle::GreenCircle(int x, int y, int radius) : x(x), y(y), radius(radius), texture(nullptr) {}
+
+GreenCircle::~GreenCircle() {}
+
 
 bool Game::init() {
     srand(static_cast<unsigned>(time(0))); // Inicializa la función rand()
@@ -52,16 +60,145 @@ void Game::drawRect(SDL_Rect rect, SDL_Color color) {
     SDL_RenderFillRect(renderer, &rect);
 }
 
+void GreenCircle::init(SDL_Renderer* renderer) {
+    SDL_Surface* surface = IMG_Load("green_circle.png");
+    if (surface) {
+        texture = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_FreeSurface(surface);
+    }
+    else {
+        printf("Error al cargar la imagen del círculo verde: %s\n", IMG_GetError());
+    }
+}
+
+void GreenCircle::render(SDL_Renderer* renderer) {
+    if (texture) {
+        SDL_Rect rect = { x - radius, y - radius, radius * 2, radius * 2 };
+        SDL_RenderCopy(renderer, texture, nullptr, &rect);
+    }
+}
+
+void GreenCircle::cleanup() {
+    if (texture) {
+        SDL_DestroyTexture(texture);
+    }
+}
+
+bool GreenCircle::isColliding(const SDL_Rect& rect) {
+    int dx = x - rect.x;
+    int dy = y - rect.y;
+    int distanceSquared = dx * dx + dy * dy;
+    int minDistanceSquared = radius * radius;
+
+    return distanceSquared < minDistanceSquared;
+}
 
 void Game::spawnEnemies(SDL_Renderer* renderer) {
     for (int i = 0; i < 10; ++i) {
-        int x = rand() % (800 - 50); // Asume que screenWidth es el ancho de la ventana del juego
-        int y = rand() % (600 - 50); // Asume que screenHeight es el alto de la ventana del juego
+        int x, y;
+
+        // Genera coordenadas aleatorias en el borde del mapa
+        if (rand() % 2 == 0) { // Aparece en el borde izquierdo o derecho
+            x = (rand() % 2 == 0) ? -50 : 800;
+            y = rand() % 600;
+        }
+        else { // Aparece en el borde superior o inferior
+            x = rand() % 800;
+            y = (rand() % 2 == 0) ? -50 : 600;
+        }
+
         Enemy enemy(x, y);
         enemy.init(renderer);
         enemies.push_back(enemy);
     }
 }
+
+Circle::Circle(int x, int y) : x(x), y(y), size(30), texture(nullptr) {}
+
+void Circle::init(SDL_Renderer* renderer) {
+    SDL_Surface* surface = IMG_Load("green_circle.png");
+    if (surface) {
+        texture = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_FreeSurface(surface);
+    }
+    else {
+        printf("Error al cargar la imagen del círculo: %s\n", IMG_GetError());
+    }
+}
+
+void Circle::render(SDL_Renderer* renderer) {
+    if (texture) {
+        SDL_Rect rect = { x - size / 2, y - size / 2, size, size };
+        SDL_RenderCopy(renderer, texture, nullptr, &rect);
+    }
+}
+
+bool Circle::isColliding(SDL_Rect playerRect) {
+    SDL_Rect circleRect = { x - size / 2, y - size / 2, size, size };
+    return Game::rectIntersect(circleRect, playerRect);
+}
+
+void Game::spawnCircles(SDL_Renderer* renderer) {
+    int numCircles = rand() % 3 + 3; // Crea entre 3 y 5 círculos
+
+    for (int i = 0; i < numCircles; ++i) {
+        // Crea una posición aleatoria para el círculo
+        int x = rand() % 800;
+        int y = rand() % 600;
+
+        // Crea el círculo y lo agrega al vector de círculos
+        Circle circle(x, y);
+        circle.init(renderer);
+        circles.push_back(circle);
+    }
+}
+
+
+void Powerup::init(SDL_Renderer* renderer) {
+    SDL_Surface* surface = IMG_Load("powerup.png");
+    if (surface) {
+        texture = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_FreeSurface(surface);
+    }
+    else {
+        printf("Error al cargar la imagen del power-up: %s\n", IMG_GetError());
+    }
+}
+
+bool Powerup::isColliding(const SDL_Rect& rect) const {
+    SDL_Rect powerupRect = { x, y, 20, 20 };
+    return Game::rectIntersect(powerupRect, rect);
+}
+
+
+void Powerup::update() {
+    // Aquí puedes agregar la lógica de actualización del power-up
+}
+
+void Powerup::render(SDL_Renderer* renderer) {
+    if (texture) {
+        SDL_Rect rect = { x, y, 20, 20 };
+        SDL_RenderCopy(renderer, texture, nullptr, &rect);
+    }
+}
+
+void Powerup::cleanup() {
+    if (texture) {
+        SDL_DestroyTexture(texture);
+    }
+}
+
+int Powerup::getX() const {
+    return x;
+}
+
+int Powerup::getY() const {
+    return y;
+}
+
+
+
+
 
 void Game::cleanup() {
     player.cleanup();
@@ -92,6 +229,16 @@ void Game::update() {
     for (Enemy& enemy : enemies) {
         enemy.update(player.getX(), player.getY());
     }
+
+    for (Powerup& powerup : powerups) {
+        powerup.update();
+
+        // Si el jugador colisiona con un power-up, lo recoge y cura su salud
+        if (powerup.isColliding(player.getRect())) {
+            player.setHealth(100);
+        }
+    }
+
 
     for (auto enemyIt = enemies.begin(); enemyIt != enemies.end();) {
         bool enemyHit = false;
@@ -128,7 +275,7 @@ void Game::checkCollisions() {
         int minDistanceSquared = 50 * 50; // Radio del jugador + radio del enemigo
 
         if (distanceSquared < minDistanceSquared) {
-            player.decreaseHealth(3);
+            player.decreaseHealth(1);
         }
     }
 }
@@ -143,6 +290,10 @@ void Game::render() {
     SDL_RenderFillRect(renderer, &wall);
     SDL_Rect floor = { 50, 0, 750, 600 };
     SDL_RenderFillRect(renderer, &floor);
+
+    for (Powerup& powerup : powerups) {
+        powerup.render(renderer);
+    }
 
     // Renderiza los enemigos
     for (Enemy& enemy : enemies) {
@@ -192,3 +343,4 @@ bool Game::rectIntersect(const SDL_Rect& a, const SDL_Rect& b) {
         a.y < b.y + b.h &&
         a.y + a.h > b.y;
 }
+

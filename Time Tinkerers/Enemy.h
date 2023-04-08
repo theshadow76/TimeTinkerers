@@ -37,9 +37,15 @@ public:
     void update();
     void render(SDL_Renderer* renderer);
 
+    bool isDead() const; // Declaración de la función
+
 private:
     int x, y;
     int vx, vy;
     int life;
     SDL_Color color;
 };
+
+bool Particle::isDead() const { // Definición de la función
+    return life <= 0;
+}

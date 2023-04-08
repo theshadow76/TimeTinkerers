@@ -7,7 +7,7 @@
 
 Player::~Player() {}
 
-Player::Player() : x(100), y(100), texture(nullptr), health(100) {}
+Player::Player() : x(100), y(100), texture(nullptr), health(100), width(30), height(70) {}
 
 void Player::init(SDL_Renderer* renderer) {
     SDL_Surface* surface = IMG_Load("player.png");
@@ -149,6 +149,15 @@ void Player::decreaseHealth(int amount) {
     if (health < 0) {
         health = 0;
     }
+}
+
+void Player::setHealth(int health) {
+    this->health = health;
+}
+
+SDL_Rect Player::getRect() const {
+    SDL_Rect rect = { x, y, width, height }; // Asegúrate de que 'width' y 'height' sean las dimensiones correctas del jugador.
+    return rect;
 }
 
 int Player::getHealth() const {

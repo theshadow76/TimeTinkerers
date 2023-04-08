@@ -34,9 +34,14 @@ public:
     int getX() const;
     int getY() const;
 
+    void setHealth(int health);
+    SDL_Rect getRect() const;
+
 private:
     int x, y;
     int health;
+    int width;
+    int height;
     SDL_Texture* texture;
 
 };

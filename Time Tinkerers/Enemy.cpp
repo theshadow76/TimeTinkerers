@@ -51,10 +51,11 @@ void Enemy::update(int playerX, int playerY) {
     double distance = sqrt(dx * dx + dy * dy);
 
     if (distance > 0) {
-        double speed = 2.0;
+        double speed = 0.01; // Reduce la velocidad a la mitad
         x += static_cast<int>(dx * speed / distance);
         y += static_cast<int>(dy * speed / distance);
     }
+
     // Actualiza las partículas
     for (auto it = particles.begin(); it != particles.end();) {
         it->update();
